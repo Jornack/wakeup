@@ -1,11 +1,11 @@
 {
   "devices": [
     {
-      "name": "rpi4-001-eth",
+      "name": "pc-001-eth",
       "macAddress": "00-11-22-AA-BB-CC"
     },
     {
-      "name": "rpi4-002-eth",
+      "name": "pc-002-eth",
       "macAddress": "55-44-33-FF-EE-DD"
     }
   ]
