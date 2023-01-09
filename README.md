@@ -6,6 +6,14 @@
 sending [Wake-on-LAN](https://en.wikipedia.org/wiki/Wake-on-LAN) messages to a
 target device.
 
+## Devices
+Devices and their MAC addresses are stored in a file called wakeup-cache. An example is included in this repo. You can persist any changes in the Devices list by mounting this file when you start the container. 
+
+## Running wakeup with docker-compose
+```bash
+docker-compose up -d
+```
+
 ## `wakeup` usage
 
 ```

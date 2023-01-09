@@ -1,0 +1,11 @@
+services:
+  wakeup:
+    container_name: wakeup
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    ports:
+      - 18080:8080
+    volumes:
+      - ./wakeup-cache:/opt/wakeup/wakeup-cache

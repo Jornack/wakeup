@@ -1,10 +1,11 @@
-FROM golang:1.12.10-alpine as builder
-
+#FROM golang:1.12.10-alpine as builder
+FROM golang:1.19.4-alpine3.17 as builder 
 WORKDIR /go/src/github.com/mpolden/wakeup
 RUN apk --no-cache add bash make gcc libc-dev git
 
-RUN go get github.com/jessevdk/go-flags
 COPY . /go/src/github.com/mpolden/wakeup
+RUN go get github.com/jessevdk/go-flags
+#COPY . /go/src/github.com/mpolden/wakeup
 
 RUN make install
 
