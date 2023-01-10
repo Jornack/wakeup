@@ -6,7 +6,6 @@ services:
       context: .
       dockerfile: ./Dockerfile
     restart: unless-stopped
-    ports:
-      - 18080:8080
+    network_mode: host
     volumes:
       - ./wakeup-cache:/opt/wakeup/wakeup-cache
